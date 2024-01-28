@@ -1,5 +1,14 @@
 h1{
     color:blue;
+    text-align: center;
+}
+#btnFrame{
+    display:flex;
+    text-align: center;
+}
+button{
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #container{

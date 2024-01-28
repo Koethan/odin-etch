@@ -1,15 +1,32 @@
 alert('hello world')
 
 let container = document.querySelector('#container')
+let btn = document.querySelector('button')
 
-for(let i = 0; i < (16*16); i++){
-    let box = document.createElement('div')
-    box.className = 'box'
-    container.appendChild(box)
-
-    box.addEventListener('mouseover', ()=>{
-        console.log('hello there')
-        box.classList.toggle('effect')
-    })
+function createGrid(number){
+    for(let i = 0; i < (number*number); i++){
+        container.removeChild
+        let box = document.createElement('div')
+        box.className = 'box'
+        container.appendChild(box)
+    
+        box.addEventListener('mouseover', ()=>{
+            console.log('hello there')
+            box.classList.toggle('effect')
+        })
+    }
 }
 
+
+btn.addEventListener('click', ()=>{
+    let newGrid = Number(prompt('please enter a number less than 100 to create a new grid'))
+    if(newGrid > 100){
+        newGrid = 100;
+    }
+    console.log(newGrid)
+    container.innerText = ''
+    createGrid(newGrid)
+    
+})
+
+createGrid(16);
