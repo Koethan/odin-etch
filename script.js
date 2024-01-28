@@ -8,6 +8,8 @@ function createGrid(number){
         container.removeChild
         let box = document.createElement('div')
         box.className = 'box'
+        box.style.height = `${640/number}px`
+        box.style.width = `${640/number}px`
         container.appendChild(box)
     
         box.addEventListener('mouseover', ()=>{

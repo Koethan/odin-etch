@@ -1,7 +1,4 @@
-h1{
-    color:blue;
-    text-align: center;
-}
+
 #btnFrame{
     display:flex;
     text-align: center;
@@ -13,8 +10,8 @@ button{
 
 #container{
     display:flex;
-    max-width: 480px;
-    max-height: 480px;
+    max-width: 640px;
+    max-height: 640px;
     flex-wrap: wrap;
     margin: 0 auto;
     /* background-color: */
@@ -23,8 +20,8 @@ button{
 .box,
 .effect {
     box-sizing: border-box;
-    width:30px;
-    height:30px;
+    /* width:40px;
+    height:40px; */
     border: 1px solid black;
     
 }
