@@ -8,6 +8,7 @@ h1{
     max-height: 480px;
     flex-wrap: wrap;
     margin: 0 auto;
+    /* background-color: */
 }
 
 .box,
@@ -16,9 +17,15 @@ h1{
     width:30px;
     height:30px;
     border: 1px solid black;
-    transition-timing-function: ease-out;
+    
+}
+.effect{
+    transition: opacity 2s ease 0.4s, transform 0.8s ease;
+    transform: scale(1);
+    background-color: grey;
 }
 .effect:hover {
     background-color: gray;
-    /* transition-duration: 3s; */
+    transition: opacity 0.2s ease;
+    transform: scale(1.04);
 }
