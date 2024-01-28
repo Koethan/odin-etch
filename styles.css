@@ -28,10 +28,10 @@ button{
 .effect{
     transition: opacity 2s ease 0.4s, transform 0.8s ease;
     transform: scale(1);
-    background-color: grey;
+    
 }
 .effect:hover {
-    background-color: gray;
+    
     transition: opacity 0.2s ease;
     transform: scale(1.04);
 }
